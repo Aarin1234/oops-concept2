@@ -1,0 +1,30 @@
+class company:
+    name = input("Enter your name: ")
+    age = 26
+    boss = "Max"
+    employee_id = int(input("what's the employees id?: "))
+    #creating a func
+    def show_Details(self):
+        section = int(input("Enter your section area(1,2,3): "))
+        print("\n\nThe details of the employee are:")
+        print(f"name :",self.name)
+        print(f'the id is:{self.employee_id}')
+        print(f'age : {self.age}')
+        print(f'boss : {self.boss}')
+        print(f'the employee section is:  {section}')
+
+
+
+
+
+#creating object
+
+employeenum1 = company()
+employeenum2 = company()
+
+
+print(f'\n Name of the employee: {employeenum1.name}')
+print(f'\n Age of the employee: {employeenum1.age}')
+print(f'\n Name of the boss: {employeenum1.boss}')
+
+employeenum2.show_Details()
