@@ -13,8 +13,13 @@ class students:
         print(f'teacher : {self.teacher}')
 
 
-
-
+    #changing the details usin the function
+    def change_details(self):
+        print("please update your age: ")
+        self.age = int(input())
+        print("please update the name of the student: ")
+        self.name = input()
+        print('\n details updated')
 
 #creating object
 
@@ -27,3 +32,10 @@ print(f'\n Age of the student: {student1.age}')
 print(f'\n Name of the teacher:{student1.teacher}')
 
 student2.show_Details()
+
+#calling function to change the details
+print("change students details")
+student1.change_details()
+
+print('\n')
+student1.show_Details()
